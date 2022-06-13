@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    let tamp=true;
+    for (let i=0; i<10;i++){
+        let a= parseInt(prompt("nhập pt mang:"))
+        arr[i]= a;
+
+    }
+    let a= parseInt(prompt("nhập pt cần tìm của mang :"))
+    for(let i=0; i<arr.length;i++){
+        if(a==arr[i]){
+            alert("V is in the arr")
+            tamp=false;
+        }
+    }
+    if(tamp){
+            alert("V is not in the arr")
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
