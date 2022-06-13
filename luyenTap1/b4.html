@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[]
+//     let b=parseInt(prompt("nhập số phần tử mảng:"))
+//     let i=0
+//     while (i<b){
+//         let a= parseInt(prompt("nhập mang:"))
+//         arr[i]=a;
+//         i++;
+//     }
+// console.log(arr)
+    let temp=0;
+    while (true){
+
+        let a=(prompt("nhap pt mảng"));
+        if(a==""){
+            continue;
+        }
+        if(a=="ok"){
+            break;
+        }
+        arr.push(a);
+
+    }
+    console.log(arr)
+    for(let i=0;i<arr.length/2;i++){
+        console.log(arr.length);
+        temp=arr[i];
+        arr[i]= arr[arr.length-1-i];
+        arr[arr.length-1-i]= temp;
+        console.log("b:"+temp)
+    }
+    console.log(arr)
+</script>
+</body>
+</html>
