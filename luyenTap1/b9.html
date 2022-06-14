@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let arr1= [];
+let arr2= [];
+
+    let temp=0;
+    while (true){
+
+        let a=(prompt("nhap pt mảng 1"));
+        if(a==""){
+            continue;
+        }
+        if(a=="ok"){
+            break;
+        }
+        arr1.push(a);
+
+    }
+while (true){
+
+    let a=(prompt("nhap pt mảng 2"));
+    if(a==""){
+        continue;
+    }
+    if(a=="ok"){
+        break;
+    }
+    arr2.push(a);
+
+}
+let arr3= arr1.concat(arr2)
+alert(arr3);
+</script>
+</body>
+</html>
